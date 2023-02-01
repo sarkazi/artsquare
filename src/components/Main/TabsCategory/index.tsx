@@ -4,7 +4,7 @@ import { CSSProperties, useState } from "react";
 import styles from "./tabsCategory.module.scss";
 
 type tabsVariantsType = {
-  text: "Image" | "Video" | "Text" | "Code";
+  text: string;
   count?: number;
 };
 

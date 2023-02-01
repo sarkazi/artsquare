@@ -1,6 +1,7 @@
 import { Box } from "@mantine/core";
 import styles from "./avatar.module.scss";
 import clsx from "clsx";
+import Image from "next/image";
 
 interface IAvatarProps {
   size: "medium" | "xl" | "sm";
@@ -16,7 +17,12 @@ const Avatar: React.FC<IAvatarProps> = ({ size }) => {
         size === "sm" && styles.sm
       )}
     >
-      <img src="/img/profile/avatar.jpg" alt="avatar" />
+      <Image
+        src="/img/profile/avatar.jpg"
+        alt="avatar"
+        width={20}
+        height={20}
+      />
     </Box>
   );
 };

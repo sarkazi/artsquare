@@ -13,6 +13,7 @@ import {
 import styles from "./card.module.scss";
 import Link from "next/link";
 import Avatar from "../../Common/Avatar";
+import Image from "next/image";
 
 import LikeSvg from "../../../assets/svg/like-outline.svg";
 import CartSvg from "../../../assets/svg/picture.svg";
@@ -28,7 +29,7 @@ const Card: React.FC<ICardProps> = ({ imgLink, onClick }) => {
       <List.Item className={styles.card}>
         <button onClick={onClick}>
           <Box className={styles.cardImgBlock}>
-            <img src={imgLink} alt="card-image" />
+            <Image src={imgLink} alt="card-image" width={500} height={500} />
           </Box>
           <Box className={styles.cardContentBlock}>
             <h2 className={styles.cardTitle}>Deleniti atque corrupti</h2>

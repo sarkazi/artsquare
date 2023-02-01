@@ -4,14 +4,22 @@ import Avatar from "@/components/Common/Avatar";
 import { Box, Flex } from "@mantine/core";
 import { useState } from "react";
 import React from "react";
+import { ProductCartType } from "../../../screens/CartPage";
 
 import CheckboxCheckedSvg from "../../../assets/svg/checkbox-checked.svg";
 import CheckboxUncheckedSvg from "../../../assets/svg/checkbox-unchecked.svg";
 
-const CartItem: React.FC = ({ arr, setArr, id, checked }) => {
+interface ICartItemProps {
+  id: number;
+  checked: boolean;
+  setArr: (value: (prevState: any) => any) => void;
+  arr: ProductCartType[];
+}
+
+const CartItem: React.FC<ICartItemProps> = ({ arr, setArr, id, checked }) => {
   const handleChange = () => {
     setArr((prevState) => {
-      return prevState.map((item) => {
+      return prevState.map((item: ProductCartType) => {
         return item.id === id ? { ...item, checked: !item.checked } : item;
       });
     });

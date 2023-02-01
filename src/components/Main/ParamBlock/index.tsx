@@ -6,7 +6,7 @@ const params = [{ text: "image" }, { text: "$15" }];
 
 interface IParamBlock {
   style: CSSProperties | undefined;
-  hasInput: boolean;
+  hasInput?: boolean;
 }
 
 const ParamBlock: React.FC<IParamBlock> = ({ style, hasInput }) => {

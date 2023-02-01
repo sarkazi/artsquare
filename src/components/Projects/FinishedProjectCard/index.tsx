@@ -19,8 +19,8 @@ const FinishedProjectCard = () => {
       >
         <h2>Some colorful steampunk picture</h2>
         <p>
-          Let's model and animate a cute stylized snow globe in Blender using
-          lattice modifier and particle systems
+          Let&apos;s model and animate a cute stylized snow globe in Blender
+          using lattice modifier and particle systems
         </p>
         <Link href="/profile/1">
           <Flex className={styles.finishedAvatarBlock} align="center">

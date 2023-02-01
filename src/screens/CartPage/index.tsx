@@ -7,6 +7,11 @@ import { useForm } from "@mantine/form";
 import { useState } from "react";
 import styles from "./cartPage.module.scss";
 
+export type ProductCartType = {
+  id: number;
+  checked: boolean;
+};
+
 const CartPage = () => {
   const form = useForm({
     initialValues: {
@@ -15,7 +20,7 @@ const CartPage = () => {
     },
   });
 
-  const [arr, setArr] = useState([
+  const [arr, setArr] = useState<ProductCartType[]>([
     { id: 1, checked: false },
     { id: 2, checked: true },
     { id: 3, checked: false },
