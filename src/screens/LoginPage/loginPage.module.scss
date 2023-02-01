@@ -1,0 +1,14 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 23px;
+  width: 100%;
+  .textInput {
+    label {
+      margin-bottom: 4px;
+    }
+  }
+  .sendBtnBlock {
+    align-self: center;
+  }
+}

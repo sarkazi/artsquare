@@ -1,0 +1,100 @@
+.card {
+  border-radius: 8px;
+  overflow: hidden;
+  button {
+    cursor: pointer;
+    &:hover {
+      & .cardImgBlock img {
+        transform: scale(1.03);
+      }
+    }
+    .cardImgBlock {
+      height: 128px;
+      overflow: hidden;
+      img {
+        object-fit: cover;
+        object-position: center;
+        transition: 0.3s all ease-in;
+      }
+    }
+    .cardContentBlock {
+      background-color: #25262b;
+      padding: 13px 16px 0;
+      font-weight: 600;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      .cardTitle {
+        font-size: 13px;
+        line-height: 17px;
+        color: white;
+        margin-bottom: 3px;
+      }
+      .cardSubtitle {
+        font-size: 12px;
+        line-height: 16px;
+        color: #6d6e72;
+        text-align: left;
+      }
+    }
+  }
+}
+
+.cardDownBlock {
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 13px;
+  background-color: #25262b;
+  padding: 13px 16px;
+  width: 100%;
+  column-gap: 5px;
+  .cardOwnerBlock {
+    column-gap: 6px;
+    a {
+      display: flex;
+      align-items: center;
+      column-gap: 7px;
+      p {
+        color: white;
+      }
+    }
+    span {
+      color: #2ca237;
+    }
+  }
+  .cardIconBlock {
+    column-gap: 16px;
+    button {
+      width: 18px;
+      svg {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.modalMask {
+  padding: 42px 72px;
+  display: flex;
+  flex-direction: column;
+  .modalHeader {
+    .modalAvatarBlock {
+      column-gap: 16px;
+      span {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 21px;
+        color: white;
+      }
+    }
+  }
+  .modalImgBlock {
+    width: 572px !important;
+    height: 495px !important;
+    img {
+      width: 100%;
+      object-fit: contain;
+      object-position: center;
+    }
+  }
+}

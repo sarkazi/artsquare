@@ -1,0 +1,46 @@
+.mask {
+  padding: 100px 0;
+  .tabsBlock {
+    column-gap: 56px;
+    border-bottom: 1px solid #6d6e72;
+    padding-bottom: 24px;
+    margin-bottom: 45px;
+    position: sticky;
+    top: 60px;
+    background-color: #1a1b1e;
+    button {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 19px;
+      &.active {
+        background-color: #25262b;
+        color: #3499ed;
+      }
+      &.passive:hover {
+        background-color: unset;
+      }
+      &.passive {
+        color: #6d6e72;
+      }
+      span:first-child {
+        margin-right: 8px;
+      }
+      span:nth-child(2) {
+        font-weight: 400;
+      }
+    }
+  }
+  .cardList {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    width: 100%;
+    overflow: auto;
+  }
+  .finishedCardList {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    width: 100%;
+  }
+}

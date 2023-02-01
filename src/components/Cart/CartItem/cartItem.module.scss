@@ -1,0 +1,68 @@
+.cardItem {
+  display: grid;
+  grid-template-columns: 1fr 45px auto;
+  align-items: center;
+  .cardContentBlock {
+    padding: 16px;
+    display: grid;
+    grid-template-columns: 80px 1fr auto;
+    background-color: #25262b;
+    border-radius: 4px;
+    column-gap: 16px;
+    align-items: center;
+    .cardImageBlock {
+      border-radius: 4px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      min-height: 80px;
+      height: 100%;
+    }
+    .cardCenterBlock {
+      font-weight: 600;
+      row-gap: 13px;
+      h2 {
+        font-size: 16px;
+        line-height: 21px;
+        color: white;
+      }
+      .cardAvatarBlock {
+        column-gap: 6px;
+        line-height: 13px;
+        p {
+          font-size: 10px;
+          color: white;
+        }
+        span {
+          font-size: 10px;
+          color: #2ca237;
+        }
+      }
+    }
+    .cardRightBlock {
+      column-gap: 32px;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 19px;
+      padding-right: 8px;
+      p {
+        color: #6d6e72;
+      }
+      span {
+        color: #3499ed;
+      }
+    }
+  }
+  .emptyBlock {
+  }
+  .checkboxBlock {
+    width: 26px;
+    input {
+      display: none;
+    }
+    label {
+      cursor: pointer;
+      width: 100%;
+    }
+  }
+}

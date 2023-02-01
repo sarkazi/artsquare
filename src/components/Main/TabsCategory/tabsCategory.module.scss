@@ -1,0 +1,31 @@
+.tabs {
+  column-gap: 9px;
+  .tab {
+    color: #6d6e72;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    line-height: 19px;
+    &:hover {
+      background-color: transparent;
+    }
+    &.active {
+      background-color: #25262b;
+    }
+    &.active span:first-child {
+      color: #3499ed;
+    }
+    &.active span:nth-child(2) {
+      color: #3499ed;
+    }
+    & span:first-child {
+      font-weight: 700;
+      color: #6d6e72;
+    }
+    & span:nth-child(2) {
+      font-weight: 400;
+      color: #6d6e72;
+      margin-left: 8px;
+    }
+  }
+}

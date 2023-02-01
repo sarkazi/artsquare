@@ -1,0 +1,39 @@
+.main {
+  .mask {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0;
+    .form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      .descInput {
+        width: 100%;
+        margin-bottom: 36px;
+      }
+      .descInput input {
+        height: 43px;
+      }
+      .answerBtn {
+        background: linear-gradient(90deg, #1b74b4, #148dbc, #1195b1);
+        border-radius: 8px;
+        height: 47px;
+        svg path {
+          fill: white;
+        }
+        svg {
+          margin-right: 8px;
+          width: 18px;
+        }
+        span {
+          font-weight: 700;
+          font-size: 14px;
+          line-height: 19px;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}

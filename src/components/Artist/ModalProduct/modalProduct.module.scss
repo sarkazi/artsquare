@@ -1,0 +1,130 @@
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 101;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 90px 0;
+  .modal {
+    max-width: 716px;
+    width: 100%;
+    background-color: #25262b;
+    padding: 42px 72px;
+    display: flex;
+    flex-direction: column;
+    .header {
+      margin-bottom: 17px;
+      .avatarBlock {
+        column-gap: 16px;
+      }
+      .headerInfoBlock {
+        column-gap: 28px;
+        color: #6d6e72;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 19px;
+        .shareBlock {
+          column-gap: 8px;
+          button {
+            svg path {
+              fill: #6d6e72;
+            }
+          }
+          span {
+          }
+        }
+        .category {
+        }
+        .timeAgoBlock {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 4px 8px;
+          background-color: #6d6e72;
+          border-radius: 42px;
+          white-space: nowrap;
+          span {
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 16px;
+            color: #ffffff;
+          }
+        }
+      }
+    }
+    .text {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 19px;
+      color: #ffffff;
+      margin-bottom: 36px;
+    }
+    .imgMask {
+      background-color: #1a1b1f;
+      padding: 16px;
+      width: 100%;
+      margin-bottom: 48px;
+      h2 {
+        text-align: center;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 21px;
+        color: #ffffff;
+        margin-bottom: 16px;
+      }
+      .imgBlock {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        height: 128px;
+        column-gap: 26px;
+        .imgItem {
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+        }
+      }
+    }
+    .downBlock {
+      height: 47px;
+      .downBtnBlock {
+        height: 100%;
+        column-gap: 19px;
+        .answerBtn {
+          svg path {
+            fill: white;
+          }
+          svg {
+            margin-right: 8px;
+          }
+          background: linear-gradient(90deg, #1b74b4, #148dbc, #1195b1);
+          border-radius: 8px;
+          font-weight: 700;
+          font-size: 14px;
+          line-height: 19px;
+          color: #ffffff;
+          height: 100%;
+        }
+        .likeBtn {
+          border: 1px solid #373a40;
+          border-radius: 8px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 55px;
+          height: 100%;
+        }
+      }
+      .price {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 32px;
+        color: #3499ed;
+      }
+    }
+  }
+}

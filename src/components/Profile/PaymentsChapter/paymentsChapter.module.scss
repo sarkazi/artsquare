@@ -1,0 +1,83 @@
+.paymentsBlock {
+  width: 100%;
+  .paymentsBlockTitle {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21px;
+    color: #ffffff;
+  }
+  .paymentsInfoList {
+    display: flex;
+    align-items: center;
+    column-gap: 56px;
+    margin-bottom: 56px;
+    & .paymentsInfoItem:first-child .paymentsInfoItemBlock span {
+      color: #3499ed;
+    }
+    & .paymentsInfoItem:nth-child(2) .paymentsInfoItemBlock span {
+      color: #6d6e72;
+    }
+    .paymentsInfoItem {
+      column-gap: 24px;
+      .paymentsInfoItemBlock {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 8px 12px;
+        background-color: #25262b;
+        border-radius: 8px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 19px;
+      }
+    }
+  }
+  .form {
+    width: 100%;
+    .formButtonsBlock {
+      margin-bottom: 56px;
+      p {
+        margin-bottom: 24px;
+      }
+      .formButtonsList {
+        column-gap: 24px;
+        button {
+          background-color: #25262b;
+          border-radius: 8px;
+          color: #6d6e72;
+          &.active {
+            border: 1px solid #3499ed;
+            color: #3499ed;
+          }
+        }
+      }
+    }
+    .formInputBlock {
+      margin-bottom: 56px;
+      p {
+        margin-bottom: 8px;
+      }
+      .formInput {
+        width: 100%;
+      }
+    }
+    .saveBtn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0 16px;
+      height: 47px;
+      background-color: #25262b;
+      border-radius: 8px;
+      svg {
+        margin-right: 8px;
+      }
+      span {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 19px;
+        color: #6d6e72;
+      }
+    }
+  }
+}

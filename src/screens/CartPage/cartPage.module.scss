@@ -1,0 +1,22 @@
+.main {
+  .mask {
+    padding: 100px 0;
+    .form {
+      display: flex;
+      flex-direction: column;
+      row-gap: 64px;
+      .cardList {
+        display: flex;
+        flex-direction: column;
+        row-gap: 16px;
+      }
+      button {
+        align-self: center;
+        height: 47px;
+        background: linear-gradient(90deg, #1b74b4, #148dbc, #1195b1);
+        border-radius: 8px;
+        padding: 0 27px;
+      }
+    }
+  }
+}

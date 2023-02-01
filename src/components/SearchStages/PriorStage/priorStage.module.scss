@@ -1,0 +1,23 @@
+.mask {
+  padding: 100px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .buttonsBlock {
+    column-gap: 24px;
+    button {
+      padding: 0 16px;
+      height: 47px;
+      width: 115px;
+      border-radius: 8px;
+    }
+    .changeBtn {
+      color: #6d6e72;
+      background-color: #25262b;
+    }
+    .orderBtn {
+      color: white;
+      background: linear-gradient(90deg, #1b74b4, #148dbc, #1195b1);
+    }
+  }
+}

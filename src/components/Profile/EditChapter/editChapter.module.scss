@@ -1,0 +1,54 @@
+.boxForm {
+  .form {
+    .formUpBlock {
+      display: flex;
+      align-items: center;
+      column-gap: 24px;
+      margin-bottom: 36px;
+      button {
+        height: 47px;
+        color: #6d6e72;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 19px;
+        svg {
+          width: 18px;
+          margin-right: 8px;
+        }
+        svg path {
+          fill: #3499ed;
+        }
+      }
+    }
+    button {
+      background-color: #25262b;
+      display: flex;
+      align-items: center;
+      column-gap: 8px;
+      height: 47px;
+      border-radius: 8px;
+      svg {
+        width: 18px;
+        margin-right: 8px;
+      }
+      svg path {
+        fill: white;
+      }
+      span {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 19px;
+        color: #6d6e72;
+      }
+    }
+  }
+  .inputsBlock {
+    display: flex;
+    flex-direction: column;
+    row-gap: 36px;
+    margin-bottom: 80px;
+    label {
+      margin-bottom: 4px;
+    }
+  }
+}

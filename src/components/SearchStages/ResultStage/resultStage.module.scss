@@ -1,0 +1,12 @@
+.mask {
+  padding: 100px 0;
+
+  // .cardsBlock {
+  .cardsList {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    column-gap: 20px;
+    row-gap: 40px;
+  }
+  // }
+}
